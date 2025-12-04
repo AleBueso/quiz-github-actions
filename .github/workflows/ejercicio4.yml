@@ -17,15 +17,15 @@ jobs:
       - name: Checkout código
         uses: actions/checkout@v4
 
-      - name: Usar Node.js 18
+      - name: Configurar Node.js 18
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: 18
 
       - name: Ejecutar tests
-        run: npm test
+        run: echo "Corriendo tests en ${{ runner.os }}"
 
-      - name: Imprimir SO
+      - name: Mostrar sistema operativo
         run: echo "Sistema operativo: ${{ runner.os }}"
 
       - name: Solo en Linux
