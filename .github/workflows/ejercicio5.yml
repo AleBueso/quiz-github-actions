@@ -1,4 +1,4 @@
-name: Ejercicio 5 - workflow completo con secrets
+name: Ejercicio 5 - workflow completo con variables y secrets
 
 on:
   push:
@@ -14,7 +14,6 @@ jobs:
   setup:
     runs-on: ubuntu-latest
 
-    # Outputs del job
     outputs:
       timestamp: ${{ steps.create-timestamp.outputs.timestamp }}
 
