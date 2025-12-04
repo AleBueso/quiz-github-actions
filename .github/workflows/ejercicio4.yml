@@ -22,8 +22,10 @@ jobs:
         with:
           node-version: "18"
 
-      - name: Ejecutar tests
-        run: npm test
+      # Ejecutamos directamente el archivo de tests para evitar
+      # cualquier problema con "npm test"
+      - name: Ejecutar tests de calculadora
+        run: node test-calculadora.js
 
       - name: Imprimir SO
         run: echo "Sistema operativo: ${{ runner.os }}"
