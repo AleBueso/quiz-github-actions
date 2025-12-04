@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Step 1 - Saludo
-        run: echo "Hola, mi nombre es Alejandra Bueso"
+        run: echo "Hola, mi nombre es ALEBUESO"
 
       - name: Step 2 - Fecha y hora
         run: date
