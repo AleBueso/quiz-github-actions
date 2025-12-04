@@ -22,10 +22,6 @@ jobs:
         with:
           node-version: "18"
 
-      # Si algún día tienes dependencias, esto no rompe nada.
-      - name: (Opcional) Instalar dependencias
-        run: npm install || echo "Sin dependencias, continuamos"
-
       - name: Ejecutar tests
         run: npm test
 
